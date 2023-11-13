@@ -1,0 +1,272 @@
+/* Default styles for all screen sizes */
+body{
+    background-image: url('../images/bgimage.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This property fixes the background in place */
+    margin: 0;
+}
+.buy{
+    color: black;
+}
+
+.buy:hover{
+    color: blue;
+}
+.delivery {
+    padding: 15px 6px;
+    display: block;
+}
+
+.delivery:hover {
+    border: 2px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#home:hover {
+    border: 2px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.search {
+    padding-left: 10px;
+    color: black;
+    width: 700px;
+    height: 35px;
+}
+
+#h {
+    margin-left: 2vw;
+}
+
+
+
+.row1 {
+    display: flex;
+    float: left;
+    /* width: 20%; */
+}
+
+.row2 {
+    display: flex;
+    float: left;
+    /* width: 60%; */
+
+}
+
+.row3 {
+    display: flex;
+    margin-left: auto;
+    float: left;
+    /* width: 20%; */
+
+}
+
+.profile {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.profile:hover {
+    color: blue;
+}
+
+.full {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+
+    .delivery,
+    #home {
+        padding: 10px 6px;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 300px;
+    }
+    .row1{
+        margin-bottom: 3px;
+    }
+
+    .delivery{
+        margin: 10px;
+
+    }
+
+    .row2{
+        margin-bottom: 5px;
+    }
+    .full{
+        display: block;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+
+    .delivery,
+    #home {
+        padding: 12px 8px;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .full {
+        display: block;
+    }
+
+    
+}
+
+#title{
+    margin-top: 70px;
+}
+.cointainer{
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    /* height: auto; */
+    height: 250px;
+    
+    background-color: rgb(237, 237, 237);
+}
+
+.card {
+
+    display: flex;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+    cursor: pointer;
+    /* flex-wrap: wrap;
+  justify-content: space-between; */
+}
+
+.cointainer::-webkit-scrollbar {
+    display: none;
+}
+
+.basecard {
+    box-shadow: 1px 1px 3px 3px #9e9e9e;
+    max-width: 100%;
+  /* height: auto; */
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .cointainer{
+        display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    }
+    .card {
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
+    .basecard {
+        height: 200px;
+        width: 80%;
+    }
+    #title{
+        margin-top: 100px;
+    }
+    
+}
+
+.offerbg{
+    /* background-color: rgb(2, 255, 2); */
+    padding: 20px 10px;
+}
+
+.rotate{
+    box-shadow: 3px 3px 3px 3px rgb(128, 128, 128);
+    /* margin-left: 37%;
+    margin-right: 45%; */
+    margin: 0 auto;
+    /* align-items: center;
+    text-align: center; */
+    background: white;
+    font-size: 24;
+    width: 350px;
+    margin-bottom: 20px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.head{
+    margin: 8px 12px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.sub-offerbg{
+    display: block;
+    /* align-items: center;
+    margin-left: 37%; */
+}
+
+.rotate:hover{
+    transform: translate(-6px,-7px); 
+    box-shadow: 5px 5px 5px 5px rgb(106, 106, 106);
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .rotate{
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        margin: 0 auto;
+        width: 300px;
+        margin-bottom: 20px;
+        
+    }
+    .head{
+        font-size: 16px;
+    }
+    .sub-offerbg{
+        display: block;
+    }
+    
+}
+
+.icon{
+    margin: 25px auto 30px;
+padding: 0;
+border: 0;
+border-top: solid 3px;
+text-align: center;
+}
+
+.icon:after {
+    content: "\f0e7";
+    display: inline-block;
+    position: relative;
+    top: -1.7rem;
+    padding: 0 1rem;
+    font-family: FontAwesome;
+    font-size: 3rem;
+    background-color: #fff; 
+    }
+
+.rupees{
+    text-align: center;
+    font-size: large;
+
+}

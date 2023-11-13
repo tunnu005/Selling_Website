@@ -1,0 +1,57 @@
+body{
+    background-image: url('../images/bgimage.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This property fixes the background in place */
+    margin: 0;
+}
+.imagepart{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.imageBox{
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.imageBox:hover{
+    box-shadow: 1px 1px 5px 1px rgb(2, 227, 244);
+}
+.imagestyle{
+    width: 500px;
+    height: 500px;
+}
+
+@media (max-width:600px) {
+    .imagepart{
+        width: 50px;
+        height: 50px;
+    }
+    .imageBox{
+        margin-left: 11px;
+        margin-top: 40px;
+    }
+    .imagestyle{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (min-width: 601px) and (max-width: 960px) {
+    .imagepart{
+        width: 70px;
+        height: 70px;
+    }
+    .imageBox{
+        margin-left: 15px;
+    }
+}
+    
+.descriptionpanel{
+    margin-top: 20px;
+    margin-left: 200px;
+}
